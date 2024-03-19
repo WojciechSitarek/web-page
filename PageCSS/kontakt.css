@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(253, 253, 253);
+}
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: black ;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: 2px solid;
+    border-color: black;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 4px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 4px;
+}
+
+.contact-inputs:focus {
+    border: none;
+}
+
+.contact-inputs::placeholder{
+    color:#a9a9a9 ;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button:hover {
+    background: linear-gradient(270deg, #fa6d86, #ff994f);
+    transform: scale(1.05);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.contact-left button img{
+    height: 15px;
+}
+
+.contact-right img{
+    width: 500px;
+}
+
+ #intro-btn {
+      width: 50px;
+      height: 30px;
+      font-size: 10px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: bold;
+      border-width: 2.5px;
+      border: none;
+      border-radius: 4px;
+      background: linear-gradient(270deg,#ff994f,#fa6d86);
+      color: white;
+      transition: background-color 0.3s;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+    }
+
+    #intro-btn:hover {
+      background: linear-gradient(270deg, #fa6d86, #ff994f);
+      color: white;
+    }
+
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .social-icons {
+    display: flex;
+    position: right;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .contact-info {
+    text-align: left;
+  }
+  
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    h5 {
+      margin-bottom: 10px; 
+    }
+  
+    .social-media {
+      margin-top: 10px; 
+    }
+  
+    .social-icons {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .contact-info {
+      text-align: center;
+      margin-top: 10px; 
+    }
+  }
+
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+  }
+  
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
