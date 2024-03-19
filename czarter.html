@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainPageStyle.css">
+    <title>Czarter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="PageCSS/czarter.css">
+    
+</head>
+<body>
+    <header>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Wodne Horyzonty</h1>
+        <p class="lead">Wynajem jachtów motorowych i żaglowych</p>
+        <button id="openMenuBtn" class="btn btn-primary" onclick="openNav()">Otwórz menu</button> 
+    </div>
+    <div class="button-container">
+            <button class="button" onclick="window.location.href='#motorowe'">Jachty Motorowe</button>
+            <button class="button"onclick="window.location.href='#żaglowe'">Jachty Żaglowe</button>
+    </div>
+</header>
+<main>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+        <a href="intro.html">Start</a>
+        <a href="Onas.html">O nas</a>
+        <a href="wycieczki.html">Wycieczki</a>
+        <a href="kontakt.html">Kontakt</a>
+        </div>
+    </div>
+
+    <h1 id="motorowe">Jachty Motorowe</h1>
+
+    <div class="tile" >
+        <img src="/jachtMotorowy1.webp" alt="Chorwacja">
+        <div class="tile-text">
+          <h2>Prestige Yachts 1600X</h2>
+          <h5>Parametry</h5>
+          <ul>
+            <li>Długość: 16 metrów</li>
+            <li>Silnik: 250 KM</li>
+            <li>Rodzaj kadłuba: Deep V</li>
+          </ul>
+          <p>"Luxury Voyager" to luksusowa motorówka marki Prestige Yachts z pełnym wyposażeniem.<br>
+             Z pięcioma kabinami, salonem, kuchnią, jacuzzi na pokładzie, sprzętem do sportów<br>
+             wodnych i obszernym tarasem, to idealny wybór dla tych, którzy cenią sobie komfort i prestiż.<br>
+             Na tym jachcie odbywają się wycieczki zagraniczne. Możliwość wynajmu tylko z załogą</p>
+            <h5>Cennik</h5>
+            <ul>
+                <li>Dzienny: 4000 PLN</li>
+                <li>Tygodniowy:25 000 PLN </li>
+              </ul>
+              <p><b>Wymagany patent:</b> Patent żeglarski (min. Jachtowy sternik morski).</p>
+              <p><b>Kontakt:</b> +48 573 362 874</p>
+        </div>
+      </div>
+
+
+      <div class="tile">
+        <img src="/jachtMotorowy2.jpg" alt="Chorwacja">
+        <div class="tile-text">
+          <h2>YachtLine 1200LX</h2>
+          <h5>Parametry</h5>
+          <ul>
+            <li>Długość: 12 metrów</li>
+            <li>Silnik: 150 KM</li>
+            <li>Rodzaj kadłuba: Planing hull</li>
+          </ul>
+          <p>"Ocean Master" to imponująca motorówka marki YachtLine, idealna do dłuższych<br>
+             rejsów. Z trzema kabinami, salonem, kuchnią, systemem audio, grill'em na <br>
+             pokładzie i luksusowym wykończeniem, to prawdziwa perełka na wodzie.</p>
+            <h5>Cennik</h5>
+            <ul>
+                <li>Godzinowy: 280 PLN</li>
+                <li>3 godziny: 600 PLN</li>
+                <li>Dzienny: 1800 PLN</li>
+                <li>Kaucja: 2500 PLN</li>
+              </ul>
+              <p><b>Wymagany patent:</b> Sternik motorowodny.</p>
+              <p><b>Kontakt:</b> +48 573 362 874</p>
+        </div>
+      </div>
+
+      <div class="tile">
+        <img src="/jachtMotorowy33.jpg" alt="Chorwacja">
+        <div class="tile-text">
+          <h2>NauticalCraft 100XT</h2>
+          <h5>Parametry</h5>
+          <ul>
+            <li>Długość: 10 metrów</li>
+            <li>Silnik: 120 KM</li>
+            <li>Rodzaj kadłuba: Deep V</li>
+          </ul>
+          <p>"Sea Explorer" to motorówka marki NauticalCraft stworzona do odkrywania <br>
+            nowych wód. Wyposażona w dwie kabiny, aneks kuchenny, system audio, sprzęt<br>
+             do grillowania i wygodne miejsce do opalania, zapewnia komfort i przygodę.</p>
+            <h5>Cennik</h5>
+            <ul>
+                <li>Godzinowy: 220 PLN</li>
+                <li>3 godziny: 500 PLN</li>
+                <li>Dzienny: 1400 PLN</li>
+                <li>Kaucja: 2000 PLN</li>
+              </ul>
+              <p><b>Wymagany patent:</b> Sternik motorowodny.</p>
+              <p><b>Kontakt:</b> +48 573 362 874</p>        
+            </div>
+      </div>
+      <div class="tile">
+        <img src="/motorowa4.jpg" alt="Chorwacja">
+        <div class="tile-text">
+          <h2>SeaMaster 800X</h2>
+          <h5>Parametry</h5>
+          <ul>
+            <li>Długość: 8 metrów</li>
+            <li>Silnik: 90 KM</li>
+            <li>Rodzaj kadłuba: V-shaped</li>
+          </ul>
+          <p>"Adrenaline Rush" to dynamiczna motorówka marki SeaMaster. Idealna dla <br>
+            miłośników szybkiej jazdy, oferuje przestronny pokład, kabinę, system audio,<br>
+             lodówkę i sprzęt do nurkowania, zapewniając niezapomniane chwile na wodzie.</p>
+            <h5>Cennik</h5>
+            <ul>
+                <li>Godzinowy: 180 PLN</li>
+                <li>3 godziny: 400 PLN</li>
+                <li>Dzienny: 1100 PLN</li>
+                <li>Kaucja: 1500 PLN</li>
+              </ul>
+              <p><b>Wymagany patent:</b> Sternik motorowodny.</p>
+              <p><b>Kontakt:</b> +48 573 362 874</p>
+        </div>
+      </div>
+
+      <h1 id="żaglowe">Jachty Żaglowe</h1>
+
+      <div class="tile">
+        <img src="/jacht żaglowy.jpg" alt="Chorwacja">
+        <div class="tile-text">
+          <h2>Żaglowiec z Silnikiem "Sea Breeze"</h2>
+          <h5>Parametry</h5>
+          <ul>
+            <li>Długość: 10 metrów</li>
+            <li>Silnik: 15 KM</li>
+          </ul>
+          <p>"Sea Breeze" to elegancki żaglowiec z dodatkowym silnikiem, oferujący <br>
+            połączenie siły wiatru i wydajności silnika. Idealny dla tych, którzy <br>
+            chcą łączyć tradycyjne żeglowanie z nowoczesnymi udogodnieniami.</p>
+            <h5>Cennik</h5>
+            <ul>
+                <li>Godzinowy: 70 PLN</li>
+                <li>Dzienny: 300 PLN</li>
+                <li>Tygodniowy : 1700 PLN</li>
+                <li>Tygodniowy (z załogą): 4000 PLN</li>
+              </ul>
+              <p><b>Wymagany patent:</b> Patent żeglarski (min. żeglarz jachtowy).</p>
+              <p><b>Kontakt:</b> +48 573 362 874</p>
+        </div>
+      </div>
+
+      <div class="tile">
+        <img src="/jacgtZaglowy2.jpg" alt="Chorwacja">
+        <div class="tile-text">
+          <h2>Żaglowiec z Silnikiem "Ocean Majesty"</h2>
+          <h5>Parametry</h5>
+          <ul>
+            <li>Długość: 12 metrów</li>
+            <li>Silnik: 30 KM</li>
+          </ul>
+          <p>"Ocean Majesty" to luksusowy żaglowiec z potężnym silnikiem, zapewniający <br>
+            doskonałą wydajność na otwartym morzu. Z trzema kabinami, <br>
+            dwiema łazienkami i salonem, to idealny wybór dla wymagających żeglarzy.</p>
+            <h5>Cennik</h5>
+            <ul>
+                <li>Godzinowy: 100 PLN</li>
+                <li>Dzienny: 500 PLN</li>
+                <li>Tygodniowy: 3000 PLN</li>
+                <li>Tygodniowy (z załogą): 6 000 PLN</li>
+              </ul>
+              <p><b>Wymagany patent:</b> Patent żeglarski (min. Jachtowy sternik morski).</p>
+              <p><b>Kontakt:</b> +48 573 362 874</p>
+        </div>
+      </div>
+
+      <div class="tile">
+        <img src="/jachtZaglowy3.jpg" alt="Chorwacja">
+        <div class="tile-text">
+          <h2>Żaglowiec z Silnikiem "Wind Spirit"</h2>
+          <h5>Parametry</h5>
+          <ul>
+            <li>Długość: 12 metrów</li>
+            <li>Silnik: 20 KM</li>
+          </ul>
+          <p>"Wind Spirit" to nowoczesny żaglowiec z wydajnym silnikiem, oferujący <br>
+              komfortową żeglugę. Z dwoma kabinami, łazienką i przestronnym kokpitem,<br>
+              gwarantuje niezapomniane chwile na morzu.</p>
+            <h5>Cennik</h5>
+            <ul>
+                <li>Godzinowy: 100 PLN</li>
+                <li>Dzienny: 400 PLN</li>
+                <li>Tygodniowy: 2500 PLN</li>
+                <li>Tygodniowy (z załogą): 5000 PLN</li>
+              </ul>
+              <p><b>Wymagany patent:</b> Patent żeglarski (min. Żeglarz jachtowy).</p>
+              <p><b>Kontakt:</b> +48 573 362 874</p>
+        </div>
+      </div>
+
+
+</main>
+<footer class="footer">
+  <h5>&copy; Wojciech Sitarek</h5>
+      <div class="social-media">
+        <div class="social-icons">
+          <a href="https://www.facebook.com" class="icon"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://pl.pinterest.com" class="icon"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>    
+  </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

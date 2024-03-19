@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="PageCSS/wycieczki.css">
+    <title>WodneHoryzonty</title>
+</head>
+<body>
+    <header>
+      <div id="Chorwacja" class="tabcontent">
+        <h1>Chorwacja</h1>
+        <button id="openMenuBtn" type="button" class="btn btn-outline-dark" onclick="openNav()">Więcej</button>
+      </div>
+      
+      <div id="Norwegia" class="tabcontent">
+        <h1>Norwegia</h1>
+        <button id="openMenuBtn" type="button" class="btn btn-outline-dark" onclick="openNav()">Więcej</button>      </div>
+      
+      <div id="Francja" class="tabcontent">
+        <h1>Francja</h1>
+        <button id="openMenuBtn" type="button" class="btn btn-outline-dark" onclick="openNav()">Więcej</button>      </div>
+      
+      <div id="Włochy" class="tabcontent">
+        <h1>Włochy</h1>
+        <button id="openMenuBtn" type="button" class="btn btn-outline-dark" onclick="openNav()">Więcej</button>      </div>
+      
+  </div>
+      
+      <button class="tablink" onclick="openCity('Chorwacja', this)" id="defaultOpen">Chorwacja</button>
+      <button class="tablink" onclick="openCity('Norwegia', this)">Norwegia</button>
+      <button class="tablink" onclick="openCity('Francja', this)">Francja</button>
+      <button class="tablink" onclick="openCity('Włochy', this)">Włochy</button>
+    </header>
+
+    <main>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="intro.html">Start</a>
+          <a href="Onas.html">O nas</a>
+          <a href="czarter.html">Czarter</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </div>
+
+      <div class="tile">
+        <img src="/chorwacja2.jpg" alt="Chorwacja">
+        <div class="tile-text">
+          <h2>Wycieczka do Chorwacji - "Perły Adriatyku"</h2>
+          <ul>
+            <li>Długość trasy: 7 dni</li>
+            <li>Trasa: Gdańsk - Zadar - Split - Hvar - Dubrownik - Gdańsk</li>
+            <li>Cena: Od 5 000 PLN od osoby</li>
+          </ul>
+          <p>Ceny obejmują czarter jachtu, załogę, paliwo oraz podstawowe wyżywienie<br>
+            na pokładzie. Dodatkowe koszty mogą obejmować opcjonalne atrakcje,<br>
+            przystanie portowe, dodatkowe posiłki, czy atrakcje turystyczne na lądzie.</p>
+            <p><b>Kontakt:</b> +48 573 362 874</p>
+        </div>
+        <div id="Chorwacja-weather" class="weather-panel"></div>
+      </div>
+
+      <div class="tile">
+        <img src="/Norwegia2.jpg" alt="Norwegia">
+        <div class="tile-text">
+          <h2>Wycieczka do Norwegii (Lofoty) - "Magiczne Lofoty"</h2>
+          <ul>
+            <li>Długość trasy: 10 dni</li>
+            <li>Trasa: Gdańsk - Oslo - Lofoty - Tromsø - Gdańsk</li>
+            <li>Cena: Od 8 000 PLN od osoby</li>
+          </ul>
+          <p>Ceny obejmują czarter jachtu, załogę, paliwo oraz podstawowe wyżywienie<br>
+            na pokładzie. Dodatkowe koszty mogą obejmować opcjonalne atrakcje,<br>
+            przystanie portowe, dodatkowe posiłki, czy atrakcje turystyczne na lądzie.</p>
+            <p><b>Kontakt:</b> +48 573 362 874</p>
+        </div>
+        <div id="Norwegia-weather" class="weather-panel"></div>
+      </div>
+
+      <div class="tile">
+        <img src="/Francja.jpg" alt="Francja">
+        <div class="tile-text">
+          <h2>Wycieczka do Francji - "Riwiera Francuska"</h2>
+          <ul>
+            <li>Długość trasy: 10 dni</li>
+            <li>Trasa: Gdańsk - Marsylia - Nicea - Monako - Cannes - Gdańsk</li>
+            <li>Cena: Od 7 500 PLN od osoby</li>
+          <p>Ceny obejmują czarter jachtu, załogę, paliwo oraz podstawowe wyżywienie<br>
+            na pokładzie. Dodatkowe koszty mogą obejmować opcjonalne atrakcje,<br>
+            przystanie portowe, dodatkowe posiłki, czy atrakcje turystyczne na lądzie.</p>
+            <p><b>Kontakt:</b> +48 573 362 874</p>
+        </div>
+        <div id="Francja-weather" class="weather-panel"> </div>
+      </div>
+
+      <div class="tile">
+        <img src="/włochy2.jpg" alt="Włochy">
+        <div class="tile-text">
+          <h2>Wycieczka do Włoch - "Wyspy Morza Tyrreńskiego"</h2>
+          <ul>
+            <li>Długość trasy: 14 dni</li>
+            <li>Trasa: Gdańsk - Neapol - Capri - Sardynia - Sycylia - Gdańsk</li>
+            <li>Cena: Od 9 500 PLN od osoby</li>
+          </ul>
+          <p>Ceny obejmują czarter jachtu, załogę, paliwo oraz podstawowe wyżywienie<br>
+            na pokładzie. Dodatkowe koszty mogą obejmować opcjonalne atrakcje,<br>
+            przystanie portowe, dodatkowe posiłki, czy atrakcje turystyczne na lądzie.</p>
+            <p><b>Kontakt:</b> +48 573 362 874</p>
+        </div>
+        <div id="Włochy-weather" class="weather-panel"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <h5>&copy; Wojciech Sitarek</h5>
+          <div class="social-media">
+            <div class="social-icons">
+              <a href="https://www.facebook.com" class="icon"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com" class="icon"><i class="fab fa-instagram"></i></a>
+              <a href="https://pl.pinterest.com" class="icon"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>    
+      </footer>
+    <script src="index.js"></script>
+    <script src="weatherApp.js"></script>
+</body>
+</html>

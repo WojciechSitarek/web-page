@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mdb": "^0.1.0",
+    "mysql": "github:mysqljs/mysql",
+    "ngrok": "^5.0.0-beta.2"
+  }
+}
